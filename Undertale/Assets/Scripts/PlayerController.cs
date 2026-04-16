@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,12 +20,15 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
 
+    Animator animator;
+
     void Start()
     {
         actions.Enable();
         forward_action = actions.FindActionMap("Movement").FindAction("Forward");
         up_action = actions.FindActionMap("Movement").FindAction("Up");
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -39,9 +43,16 @@ public class PlayerController : MonoBehaviour
         Vector2 movement_force = new Vector2(foward * horizontalSpeed, up * verticalSpeed);
         rb.AddForce(movement_force);
 
+        int animationValue = 0;
 
+        if (foward != 0)
+        {
+            animationValue = (int)foward;
+        }
+
+        animator.SetInteger("SpeedX", animationValue);
         // Vector2 moveInput = new Vector2 (foward, up);
-       // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime);
+        // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime);
 
 
 

@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "UndertaleFont";
+    src: url("FuenteUndertale/PixelOperator-Bold.ttf") format("truetype");
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+  font-family: "UndertaleFont", monospace;
+  background-color: black;
+  color: white;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+
+  background-image: url("img/fondo4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-position: center; 
+  
+}
+
+#capcalera {
+    background-color: #111111;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+.titolPrincipal {
+    margin: 0;
+    font-size: 3em;
+}
+
+.subtitol {
+    margin-top: 1em;
+    font-size: 1.4em;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.llistaMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.llistaMenu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.llistaMenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.llistaMenu a:hover {
+    color: yellow;
+}
+
+.selectorIdioma {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.textoIdioma {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.botonIdioma {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.botonIdioma:hover {
+    background-color: white;
+    color: black;
+}
+
+.contingut {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.seccio,
+.seccioHero {
+    background-color: #111111;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.titolSeccio {
+    margin-top: 0;
+    color: yellow;
+    font-size: 24px;
+}
+
+.textSeccio {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.corDetermination {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin: 20px auto 0 auto;
+}
+
+.llistaZones {
+    padding-left: 20px;
+    line-height: 1.8em;
+}
+
+.contenidorImatges {
+    text-align: center;
+}
+
+.imatgeGaleria {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+#personatges {
+    margin-top: 80px;
+}
+
+.contenidorPersonatges {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.targetaPersonatge {
+    background-color: #1a1a1a;
+    border: 1px solid white;
+    padding: 15px;
+    width: 32%;
+    text-align: center;
+}
+
+.marcImatgePersonatge {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.imatgePersonatge {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.nomPersonatge {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: yellow;
+    font-size: 1.8em;
+}
+
+.descripcioPersonatge {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.footerWeb {
+    text-align: center;
+    background-color: #111111;
+    border-top: 1px solid white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.textFooter {
+    margin: 0;
+}
+
+    
+
+.animacioEsquerra {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s ease;
+}
+
+.animacioDreta {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1s ease;
+}
+
+.animacioCentre {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+
+@media (max-width: 111em) {
+    .targetaPersonatge {
+        width: 100%;
+    }
+
+    .selectorIdioma {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #capcalera {
+        text-align: center;
+    }
+}

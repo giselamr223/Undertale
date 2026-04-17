@@ -15,7 +15,7 @@ public class Name_Input : MonoBehaviour
     //Texto donde se mostrará el name que escriba el player
     public TMP_Text nameText;
 
-   //num d columnas, aunque despues podremos modificarlas
+    //num d columnas, aunque despues podremos modificarlas
     public int columns = 26;
     //longitud max del nombre del player
     public int maxLength = 15;
@@ -43,7 +43,7 @@ public class Name_Input : MonoBehaviour
     {
         //Detecta el input del teclado
         HandleInput();
-        
+
     }
     void GenerateGrid()
     {
@@ -66,7 +66,7 @@ public class Name_Input : MonoBehaviour
             //Obtiene el component button del prefab
             Button btn = obj.GetComponent<Button>();
             //cuando se haga click añadira la letra al nombre
-           // btn.onClick.AddListener(() => AddLetter(letter));
+            // btn.onClick.AddListener(() => AddLetter(letter));
 
             //guardamos boton
             buttons.Add(btn);
@@ -111,42 +111,42 @@ public class Name_Input : MonoBehaviour
             DeleteLetter();
         }
         void HandleInput()
-{
-    int newIndex = currentIndex;
+        {
+            int newIndex = currentIndex;
 
-    // Movimiento horizontal
-    if (Input.GetKeyDown(KeyCode.RightArrow))
-        newIndex += 1;
+            // Movimiento horizontal
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+                newIndex += 1;
 
-    if (Input.GetKeyDown(KeyCode.LeftArrow))
-        newIndex -= 1;
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+                newIndex -= 1;
 
-    // Movimiento vertical
-    if (Input.GetKeyDown(KeyCode.UpArrow))
-        newIndex -= columns;
+            // Movimiento vertical
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+                newIndex -= columns;
 
-    if (Input.GetKeyDown(KeyCode.DownArrow))
-        newIndex += columns;
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+                newIndex += columns;
 
-    // Clamp seguro
-    newIndex = Mathf.Clamp(newIndex, 0, buttons.Count - 1);
+            // Clamp seguro
+            newIndex = Mathf.Clamp(newIndex, 0, buttons.Count - 1);
 
-    currentIndex = newIndex;
+            currentIndex = newIndex;
 
-    // Seleccionar letra
-    if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
-    {
-        AddLetter(GetLetter(currentIndex));
-    }
+            // Seleccionar letra
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+            {
+                AddLetter(GetLetter(currentIndex));
+            }
 
-    // Borrar
-    if (Input.GetKeyDown(KeyCode.Backspace))
-    {
-        DeleteLetter();
-    }
+            // Borrar
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                DeleteLetter();
+            }
 
-    UpdateSelection();
-}
+            UpdateSelection();
+        }
         UpdateSelection();
     }
     //marca la letra q se selecciona
@@ -167,7 +167,7 @@ public class Name_Input : MonoBehaviour
         }
     }
     //añade una letra al nombre del player
-    void AddLetter (char letter)
+    void AddLetter(char letter)
     {
         //si llega al maximo no se añaden mas
         if (playerName.Length == maxLength) return;

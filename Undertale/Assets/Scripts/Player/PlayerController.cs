@@ -43,14 +43,21 @@ public class PlayerController : MonoBehaviour
         Vector2 movement_force = new Vector2(foward * horizontalSpeed, up * verticalSpeed);
         rb.AddForce(movement_force);
 
-        int animationValue = 0;
+        int animationValueX = 0;
 
         if (foward != 0)
         {
-            animationValue = (int)foward;
+            animationValueX = (int)foward;
         }
 
-        animator.SetInteger("SpeedX", animationValue);
+        int animationValueY = 0;
+        if (up != 0)
+        {
+            animationValueY = (int)up;
+        }
+
+        animator.SetInteger("SpeedX", animationValueX);
+        animator.SetInteger("SpeedY", animationValueY);
         // Vector2 moveInput = new Vector2 (foward, up);
         // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime);
 

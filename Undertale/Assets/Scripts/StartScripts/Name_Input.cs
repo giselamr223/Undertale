@@ -16,7 +16,7 @@ public class Name_Input : MonoBehaviour
     public TMP_Text nameText;
 
     //num d columnas, aunque despues podremos modificarlas
-    public int columns = 26;
+    public int columns = 7;
     //longitud max del nombre del player
     public int maxLength = 15;
 
@@ -26,6 +26,7 @@ public class Name_Input : MonoBehaviour
     private int currentIndex = 0;
     //String donde estará el nombre que escribe el jugador
     private string playerName = "";
+    internal List<GameObject> letters;
 
     // Start is called before the first frame update
     void Start()
@@ -183,9 +184,5 @@ public class Name_Input : MonoBehaviour
         playerName = playerName.Substring(0, playerName.Length - 1);
         nameText.text = playerName;
     }
-    public void ContinueGame()
-    {
-        Debug.Log("Continuar...");
-        // SceneManager.LoadScene("NextScene");
-    }
+  
 }

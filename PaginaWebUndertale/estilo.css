@@ -373,6 +373,8 @@ body::after {
     margin: 0;
 }
 
+/* Estils per a dispositius mòbils (Estoy pensando en quitarlo) */
+
 @media (max-width: 768px) {
     .targetaPersonatge {
         width: 100%;

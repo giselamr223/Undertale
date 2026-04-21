@@ -24,7 +24,7 @@ public class ConnexioDB : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Debug.LogError("MongoDB Connection Error: " + e.Message);
+            Debug.LogError("MongoDB Connection Error: " + e.Message); // Si da error nos lo muestra por consola
         }
     }
 }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Undertale/Assets/Resources.meta
 guid: ce81fc8dd68d2db4a8014f98dc7f1151
+=======
+guid: 733c5a717ab787d4d88330cbec9b7d6b
+>>>>>>> Stashed changes:Undertale/Assets/Settings/Scenes.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,19 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SnowAttack : MonoBehaviour
 {
-    public GameObject snowBullet;
+    public GameObject iceShardPrefab;   // ❄️ el ataque
     public Transform spawnPoint;
 
     public void ShootSnow()
     {
         for (int i = 0; i < 5; i++)
         {
-            Instantiate(snowBullet, spawnPoint.position, Quaternion.identity);
+            Instantiate(
+                iceShardPrefab,
+                spawnPoint.position,
+                Quaternion.identity
+            );
         }
 
-        Debug.Log("Snowdrake lanza nieve ❄️");
+        Debug.Log("Snowdrake lanza hielo ❄️");
     }
 }

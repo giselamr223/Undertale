@@ -1,86 +1,95 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
+Ôªøusing UnityEngine;
+using UnityEngine.UI;
 
 public class UIBattle : MonoBehaviour
 {
-    //Creamos un Game object de cada botÛn
-    public GameObject fightButton;
-    public GameObject actButton;
-    public GameObject itemButton;
-    public GameObject mercyButton;
-    //Llamamos a la textMesh del dialogo
-    public TextMeshProUGUI dialogueText;
-    //objeto de battleManager
+    public GameObject ButtonFight;
+    public GameObject ButtonAct;
+    public GameObject ButtonItem;
+    public GameObject ButtonMercy;
+
     public BattleManager battle;
-    //String para cada opciÛn
-    private string[] options = { "FIGHT", "ACT", "ITEM", "MERCY" };
+
+    private GameObject[] buttons;
     private int selectedIndex = 0;
-    //Õndice inicializado en 0
 
     void Start()
     {
-        //se actualizar· nada m·s empezar
-        UpdateUI();
+        if (!ButtonFight || !ButtonAct || !ButtonItem || !ButtonMercy)
+        {
+            Debug.LogError("‚ùå Faltan botones asignados en el Inspector");
+            return;
+        }
+
+        if (!battle)
+        {
+            Debug.LogError("‚ùå Falta BattleManager asignado");
+            return;
+        }
+
+        buttons = new GameObject[]
+        {
+            ButtonFight,
+            ButtonAct,
+            ButtonItem,
+            ButtonMercy
+        };
+
+        UpdateSelection();
     }
 
     void Update()
     {
-        //Se actualizar· en cada frame
         HandleInput();
     }
 
     void HandleInput()
     {
-        if (!battle) return;
+        if (!battle || buttons == null) return;
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             selectedIndex--;
-            if (selectedIndex < 0) selectedIndex = options.Length - 1;
-            UpdateUI();
+            if (selectedIndex < 0) selectedIndex = buttons.Length - 1;
+            UpdateSelection();
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             selectedIndex++;
-            if (selectedIndex >= options.Length) selectedIndex = 0;
-            UpdateUI();
+            if (selectedIndex >= buttons.Length) selectedIndex = 0;
+            UpdateSelection();
         }
 
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Tab))
         {
-            SelectOption();
+            buttons[selectedIndex].GetComponent<Button>().onClick.Invoke();
         }
     }
 
-    void SelectOption()
+    void UpdateSelection()
     {
-        string choice = options[selectedIndex];
-        battle.PlayerAction(choice);
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            if (i == selectedIndex)
+                buttons[i].transform.localScale = Vector3.one * 1.2f; // seleccionado
+            else
+                buttons[i].transform.localScale = Vector3.one; // normal
+        }
     }
 
-    void UpdateUI()
-    {
-        dialogueText.text =
-            (selectedIndex == 0 ? "> " : "  ") + "FIGHT\n" +
-            (selectedIndex == 1 ? "> " : "  ") + "ACT\n" +
-            (selectedIndex == 2 ? "> " : "  ") + "ITEM\n" +
-            (selectedIndex == 3 ? "> " : "  ") + "MERCY";
-    }
+   
 
     public void EnableButtons(bool active)
     {
- 
-        fightButton.SetActive(active);
-        actButton.SetActive(active);
-        itemButton.SetActive(active);
-        mercyButton.SetActive(active);
+        ButtonFight.SetActive(active);
+        ButtonAct.SetActive(active);
+        ButtonItem.SetActive(active);
+        ButtonMercy.SetActive(active);
     }
 
     public void ShowText(string text)
     {
-        dialogueText.text = text;
+        Debug.Log(text);
     }
 }

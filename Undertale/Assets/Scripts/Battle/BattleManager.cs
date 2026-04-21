@@ -1,67 +1,125 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    public enum BattleState { START, PLAYER_TURN, ENEMY_TURN }
-
-    public BattleState state;
-
-    public Snowdrake enemy;
     public UIBattle ui;
+
+    public GameObject battleBox;
+    public GameObject heart;
+
+    private enum BattleState
+    {
+        Intro,
+        PlayerTurn,
+        EnemyTurn,
+        Mercy
+    }
+
+    private BattleState state;
 
     void Start()
     {
-        if (enemy == null)
-            Debug.LogError("? Snowdrake no asignado en Inspector");
-
-        if (ui == null)
-            Debug.LogError("? UI no asignada en Inspector");
-
         StartBattle();
     }
 
-    void StartBattle()
+    public void StartBattle()
     {
-        state = BattleState.PLAYER_TURN;
-        ui.ShowText("�Un Snowdrake aparece!");
-        ui.EnableButtons(true);
+        state = BattleState.Intro;
+
+        ui.ShowText("¡Un Snowdrake aparece!");
+        ui.EnableButtons(false);
+
+        battleBox.SetActive(false);
+        heart.SetActive(false);
+
+        StartCoroutine(IntroSequence());
     }
 
-    public void PlayerAction(string action)
+    IEnumerator IntroSequence()
     {
-        if (state != BattleState.PLAYER_TURN) return;
+        yield return new WaitForSeconds(2f);
+
+        ui.ShowText("");
+        StartPlayerTurn();
+    }
+
+    void StartPlayerTurn()
+    {
+        state = BattleState.PlayerTurn;
+
+        ui.EnableButtons(true);
+
+        battleBox.SetActive(false);
+        heart.SetActive(false);
+    }
+
+    public void StartEnemyTurn()
+    {
+        state = BattleState.EnemyTurn;
 
         ui.EnableButtons(false);
 
-        if (action == "FIGHT")
-        {
-            enemy.TakeDamage(5);
-            ui.ShowText("�Atacas a Snowdrake!");
-        }
+        battleBox.SetActive(true);
+        heart.SetActive(true);
 
-        StartCoroutine(EnemyTurnDelay());
+        Debug.Log("Turno enemigo");
+
+        // 👉 aquí luego llamas ataque Snowdrake
+        StartCoroutine(EnemyAttackRoutine());
     }
 
-    IEnumerator EnemyTurnDelay()
+    IEnumerator EnemyAttackRoutine()
     {
         yield return new WaitForSeconds(2f);
-        EnemyTurn();
-    }
 
-    void EnemyTurn()
-    {
-        state = BattleState.ENEMY_TURN;
-        ui.ShowText("Turno de Snowdrake ??");
+        Debug.Log("Snowdrake ataca ❄️");
 
-        enemy.Attack(this);
+        // cuando acabas el ataque
+        EndEnemyTurn();
     }
 
     public void EndEnemyTurn()
     {
-        state = BattleState.PLAYER_TURN;
-        ui.ShowText("Tu turno");
-        ui.EnableButtons(true);
+        StartPlayerTurn();
+    }
+
+    public void PlayerAction(string action)
+    {
+        if (state != BattleState.PlayerTurn)
+            return;
+
+        Debug.Log("Jugador eligió: " + action);
+
+        if (action == "MERCY")
+        {
+            StartMercyBattle();
+            return;
+        }
+
+        StartEnemyTurn();
+    }
+
+    void StartMercyBattle()
+    {
+        state = BattleState.Mercy;
+
+        ui.EnableButtons(false);
+        ui.ShowText("Has perdonado al enemigo...");
+
+        battleBox.SetActive(true);
+        heart.SetActive(true);
+
+        Debug.Log("Modo MERCY activado");
+
+        StartCoroutine(MercyEnd());
+    }
+
+    IEnumerator MercyEnd()
+    {
+        yield return new WaitForSeconds(2f);
+
+        Debug.Log("Combate terminado (MERCY)");
+        // aquí podrías salir de combate o volver a mapa
     }
 }

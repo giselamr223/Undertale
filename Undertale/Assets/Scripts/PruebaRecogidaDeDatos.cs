@@ -5,10 +5,10 @@ using System;
 
 public class MongoManager : MonoBehaviour
 {
-    public PlayerStats playerStats;
+    public PlayerController playerStats;
 
     void Awake() {
-        playerStats = FindObjectOfType<PlayerStats>();
+        playerStats = FindObjectOfType<PlayerController>();
 
     }
 
@@ -26,9 +26,9 @@ public class MongoManager : MonoBehaviour
             return;
         }
 
-        PlayerStats.PlayerData player = new PlayerStats.PlayerData();
+        PlayerController.PlayerData player = new PlayerController.PlayerData();
 
-        player = playerStats.data; // Asigna los datos del jugador a la variable player.
+        player = playerStats.playerData; // Asigna los datos del jugador a la variable player.
 
         //Debug.LogError(player.ToString());
 
@@ -39,4 +39,4 @@ public class MongoManager : MonoBehaviour
         Debug.Log("Datos guardados en MongoDB"); // Muestra este mensaje por consola.
     }
     
-}
+}   

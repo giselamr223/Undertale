@@ -28,6 +28,9 @@ public class Name_Input : MonoBehaviour
     private string playerName = "";
     internal List<GameObject> letters;
 
+    // Referencia al player controller para guardar el nombre del jugador
+    PlayerController playerController = FindObjectOfType<PlayerController>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -176,6 +179,8 @@ public class Name_Input : MonoBehaviour
         playerName += letter;
         //Updatea el texto en pantalla
         nameText.text = playerName;
+        playerController.playerData.SetPlayerName(playerName); // Guarda el nombre del jugador en el PlayerController
+
     }
     //delete d la ultima letra del nombre
     void DeleteLetter()
@@ -183,6 +188,7 @@ public class Name_Input : MonoBehaviour
         if (playerName.Length == 0) return;
         playerName = playerName.Substring(0, playerName.Length - 1);
         nameText.text = playerName;
+        playerController.playerData.SetPlayerName(playerName); // Actualiza el nombre del jugador en el PlayerController
     }
   
 }

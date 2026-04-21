@@ -12,8 +12,8 @@ public class ConnexioDB : MonoBehaviour
     {
         /**
         * Esta cadena es la cadena de conexión a MongoDB Atlas, tiene mi usuario y contraseña, y el nombre del cluster. 
-        * (Me dijo el david que usaramos un "superusuario" usamos el mio y ya, hay que cambiar todo, ya que hay que añadir la connexion con el programa en java.)
-        */
+        * (Me dijo el david que usaramos un "superusuario" usamos el mio y ya*/
+
         string connectionString = "mongodb+srv://a25unaforcas_db_user:PbMYfbacegSK8bNP@cluster0.xbths3k.mongodb.net/";
 
         try

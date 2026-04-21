@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1d2ca69a2b2dc844aa59f8291992d392
+guid: 22177b1684887fe4fbc241dc54c61cf5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -149,85 +149,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sans_LeftDark_0
+      name: HandShake_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 107
-        height: 159
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2962bb433b9b9a04db0faa56fdd37f6e
-      internalID: 1588632071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sans_LeftDark_1
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 5
-        width: 85
-        height: 145
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93a0f3afdcda44b4599e18ba9d55dfd4
-      internalID: 1561399072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sans_LeftDark_2
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 5
-        width: 85
+        x: 5
+        y: 9
+        width: 115
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f353d5162716dc4bb8ffab0d67cefde
-      internalID: 623017251
+      spriteID: 96229c3cd40cfda44ae047f7355f69ad
+      internalID: 179127615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sans_LeftDark_3
+      name: HandShake_1
       rect:
         serializedVersion: 2
-        x: 442
-        y: 5
+        x: 122
+        y: 11
         width: 85
         height: 145
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f1c6fe9021c6c640b5a6eddc423169e
-      internalID: -1923312545
+      spriteID: c92245f0952be6d4ab72a7ab5145da47
+      internalID: -140077286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HandShake_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 9
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade0bfd0dc254ac42ae1fe612fda7283
+      internalID: -1396306481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HandShake_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 9
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ddf11969249e7408800fb50d36e9ef
+      internalID: -2039351014
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sans_LeftDark_0: 1588632071
-      sans_LeftDark_1: 1561399072
-      sans_LeftDark_2: 623017251
-      sans_LeftDark_3: -1923312545
+      HandShake_0: 179127615
+      HandShake_1: -140077286
+      HandShake_2: -1396306481
+      HandShake_3: -2039351014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

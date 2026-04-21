@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1956cdba0b389044a929e55e07af0e2c
+guid: 90c55a6b2075236459cd805eb9c820d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 220
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,190 +149,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrancoRoto_0
+      name: 2ArbolesNevados_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 483
-        width: 225
-        height: 225
+        x: 6
+        y: 593
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e985b1212215444aae4077e166f32c
-      internalID: -1456126942
+      spriteID: e2a15dd7b1d8a0c4ca4d191a065e9b64
+      internalID: 233992673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_1
+      name: 2ArbolesNevados_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 483
-        width: 222
-        height: 225
+        x: 153
+        y: 593
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbdcd3592c9195e4aab9714d3da4496a
-      internalID: -1960920606
+      spriteID: 8addbbfcd36ceba40be7304bbb8e2e3b
+      internalID: 1851326006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_2
+      name: 2ArbolesNevados_2
       rect:
         serializedVersion: 2
-        x: 483
-        y: 483
-        width: 225
-        height: 225
+        x: 300
+        y: 593
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2368f3a00af44d4bb396e5cf17a2a9a
-      internalID: 2100713703
+      spriteID: 0729384b55bdbfb4ba272eb618ddc299
+      internalID: 895115907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_3
+      name: 2ArbolesNevados_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 247
-        width: 225
-        height: 225
+        x: 6
+        y: 446
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e659b1513ab59d043ae41511274a4013
-      internalID: -516027880
+      spriteID: 364c475c72d31874d81db7032867e619
+      internalID: -1976563765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_4
+      name: 2ArbolesNevados_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 247
-        width: 225
-        height: 225
+        x: 153
+        y: 446
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8245efa3b64dbe547a504a54f6358722
-      internalID: 1554458831
+      spriteID: 2b0a458305d83f54cb06704513db1f61
+      internalID: 1517464167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_5
+      name: 2ArbolesNevados_5
       rect:
         serializedVersion: 2
-        x: 483
-        y: 247
-        width: 225
-        height: 225
+        x: 300
+        y: 446
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff5a33e67a72cd94b88b68d3d7b34dc1
-      internalID: 1412982526
+      spriteID: b4bfd6b02ec07f146bed007a7aeda6fe
+      internalID: -121723180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_6
+      name: 2ArbolesNevados_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 225
-        height: 225
+        x: 6
+        y: 299
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb3562827eefc9409f2d78d761e5a9b
-      internalID: -950694508
+      spriteID: f33ae0a657e67e545964c27e9fbcd418
+      internalID: 1090945190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_7
+      name: 2ArbolesNevados_7
       rect:
         serializedVersion: 2
-        x: 248
-        y: 10
-        width: 225
-        height: 225
+        x: 153
+        y: 299
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64af154f445bd146bac039aeca4b7ce
-      internalID: -2091689117
+      spriteID: 69e59743e1777bf44924645541a6128e
+      internalID: -1256686064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_8
+      name: 2ArbolesNevados_8
       rect:
         serializedVersion: 2
-        x: 483
-        y: 10
-        width: 225
-        height: 225
+        x: 300
+        y: 299
+        width: 140
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1cc0bdbc6a7a85498f83c2fdea4a9e2
-      internalID: -1118077950
+      spriteID: ff544235703968e44830cae4c0f6f4fb
+      internalID: 114522860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 152
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd1baa1e99879e448acbd78679cfa72
+      internalID: 1930449663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_10
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 152
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb446d6e0b26a24d8e0c737a3b6f62d
+      internalID: 241191002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 152
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ecda3588220b4478d640859ae6a922
+      internalID: -1772725584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7349e1d61a9fc844a543f9804f1f8ba
+      internalID: -2094538754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_13
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 5
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aad3b344c2b82c41a27a682b0dbd41d
+      internalID: -1132258681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2ArbolesNevados_14
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904bdf9280c70614795f2c78742170a9
+      internalID: -552705743
       vertices: []
       indices: 
       edges: []
@@ -348,15 +474,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrancoRoto_0: -1456126942
-      barrancoRoto_1: -1960920606
-      barrancoRoto_2: 2100713703
-      barrancoRoto_3: -516027880
-      barrancoRoto_4: 1554458831
-      barrancoRoto_5: 1412982526
-      barrancoRoto_6: -950694508
-      barrancoRoto_7: -2091689117
-      barrancoRoto_8: -1118077950
+      2ArbolesNevados_0: 233992673
+      2ArbolesNevados_1: 1851326006
+      2ArbolesNevados_10: 241191002
+      2ArbolesNevados_11: -1772725584
+      2ArbolesNevados_12: -2094538754
+      2ArbolesNevados_13: -1132258681
+      2ArbolesNevados_14: -552705743
+      2ArbolesNevados_2: 895115907
+      2ArbolesNevados_3: -1976563765
+      2ArbolesNevados_4: 1517464167
+      2ArbolesNevados_5: -121723180
+      2ArbolesNevados_6: 1090945190
+      2ArbolesNevados_7: -1256686064
+      2ArbolesNevados_8: 114522860
+      2ArbolesNevados_9: 1930449663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

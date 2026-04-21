@@ -92,4 +92,8 @@ public class UIBattle : MonoBehaviour
     {
         Debug.Log(text);
     }
+    public void OnMercy()
+    {
+        battle.PlayerAction("MERCY");
+    }
 }

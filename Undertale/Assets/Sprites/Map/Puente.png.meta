@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1956cdba0b389044a929e55e07af0e2c
+guid: b73679315ea969d4aa6b22374649bfee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 220
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,190 +149,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrancoRoto_0
+      name: Puente_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 483
-        width: 225
-        height: 225
+        x: 9
+        y: 7
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e985b1212215444aae4077e166f32c
-      internalID: -1456126942
+      spriteID: f628584ea708ac14cb8dd2d3edce0685
+      internalID: -204623301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_1
+      name: Puente_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 483
-        width: 222
-        height: 225
+        x: 177
+        y: 7
+        width: 160
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbdcd3592c9195e4aab9714d3da4496a
-      internalID: -1960920606
+      spriteID: 920becededf138045bfa05e9ca235f84
+      internalID: 20897822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_2
+      name: Puente_2
       rect:
         serializedVersion: 2
-        x: 483
-        y: 483
-        width: 225
-        height: 225
+        x: 345
+        y: 7
+        width: 152
+        height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2368f3a00af44d4bb396e5cf17a2a9a
-      internalID: 2100713703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_3
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 247
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e659b1513ab59d043ae41511274a4013
-      internalID: -516027880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_4
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 247
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8245efa3b64dbe547a504a54f6358722
-      internalID: 1554458831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_5
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 247
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff5a33e67a72cd94b88b68d3d7b34dc1
-      internalID: 1412982526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_6
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 10
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbb3562827eefc9409f2d78d761e5a9b
-      internalID: -950694508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_7
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 10
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c64af154f445bd146bac039aeca4b7ce
-      internalID: -2091689117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrancoRoto_8
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 10
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1cc0bdbc6a7a85498f83c2fdea4a9e2
-      internalID: -1118077950
+      spriteID: dfa675a6d82d83f459a8e1cdc0f8a162
+      internalID: 1190432913
       vertices: []
       indices: 
       edges: []
@@ -348,15 +222,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrancoRoto_0: -1456126942
-      barrancoRoto_1: -1960920606
-      barrancoRoto_2: 2100713703
-      barrancoRoto_3: -516027880
-      barrancoRoto_4: 1554458831
-      barrancoRoto_5: 1412982526
-      barrancoRoto_6: -950694508
-      barrancoRoto_7: -2091689117
-      barrancoRoto_8: -1118077950
+      Puente_0: -204623301
+      Puente_1: 20897822
+      Puente_2: 1190432913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1956cdba0b389044a929e55e07af0e2c
+guid: b9395c11ede053c4e8461e4efb4d28ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 220
+  spritePixelsToUnits: 219
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,190 +149,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrancoRoto_0
+      name: SueloCaidaNegra_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 483
-        width: 225
-        height: 225
+        x: 11
+        y: 472
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e985b1212215444aae4077e166f32c
-      internalID: -1456126942
+      spriteID: 8fda86d59a1256144bde595ce3623939
+      internalID: -480218869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_1
+      name: SueloCaidaNegra_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 483
-        width: 222
-        height: 225
+        x: 242
+        y: 472
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbdcd3592c9195e4aab9714d3da4496a
-      internalID: -1960920606
+      spriteID: d2f6e2340b7bd0b468f0ec6707d163a3
+      internalID: 692674103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_2
+      name: SueloCaidaNegra_2
       rect:
         serializedVersion: 2
-        x: 483
-        y: 483
-        width: 225
-        height: 225
+        x: 473
+        y: 472
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2368f3a00af44d4bb396e5cf17a2a9a
-      internalID: 2100713703
+      spriteID: a190414b2712da348882de6f96756eee
+      internalID: -383805343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_3
+      name: SueloCaidaNegra_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 247
-        width: 225
-        height: 225
+        x: 11
+        y: 241
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e659b1513ab59d043ae41511274a4013
-      internalID: -516027880
+      spriteID: e90bc897e6dbd1a449c88f6a47b6a6d7
+      internalID: -971043496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_4
+      name: SueloCaidaNegra_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 247
-        width: 225
-        height: 225
+        x: 242
+        y: 241
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8245efa3b64dbe547a504a54f6358722
-      internalID: 1554458831
+      spriteID: 9c9f6b8e7736dbc47a30bcfe69c79be2
+      internalID: -682651313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_5
+      name: SueloCaidaNegra_5
       rect:
         serializedVersion: 2
-        x: 483
-        y: 247
-        width: 225
-        height: 225
+        x: 473
+        y: 241
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff5a33e67a72cd94b88b68d3d7b34dc1
-      internalID: 1412982526
+      spriteID: fe767294f5c9395448615f414cc87af0
+      internalID: -1032024980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_6
+      name: SueloCaidaNegra_6
       rect:
         serializedVersion: 2
-        x: 10
+        x: 11
         y: 10
-        width: 225
-        height: 225
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb3562827eefc9409f2d78d761e5a9b
-      internalID: -950694508
+      spriteID: f7114dded9132154b8d2487c4ccc876a
+      internalID: 925752125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_7
+      name: SueloCaidaNegra_7
       rect:
         serializedVersion: 2
-        x: 248
+        x: 242
         y: 10
-        width: 225
-        height: 225
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64af154f445bd146bac039aeca4b7ce
-      internalID: -2091689117
+      spriteID: 79a8f5777b5474143a531fcdca0560e1
+      internalID: -288505553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrancoRoto_8
+      name: SueloCaidaNegra_8
       rect:
         serializedVersion: 2
-        x: 483
+        x: 473
         y: 10
-        width: 225
-        height: 225
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1cc0bdbc6a7a85498f83c2fdea4a9e2
-      internalID: -1118077950
+      spriteID: 1b99a37d851bf524a86354dab783d3a1
+      internalID: -1043156716
       vertices: []
       indices: 
       edges: []
@@ -348,15 +348,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrancoRoto_0: -1456126942
-      barrancoRoto_1: -1960920606
-      barrancoRoto_2: 2100713703
-      barrancoRoto_3: -516027880
-      barrancoRoto_4: 1554458831
-      barrancoRoto_5: 1412982526
-      barrancoRoto_6: -950694508
-      barrancoRoto_7: -2091689117
-      barrancoRoto_8: -1118077950
+      SueloCaidaNegra_0: -480218869
+      SueloCaidaNegra_1: 692674103
+      SueloCaidaNegra_2: -383805343
+      SueloCaidaNegra_3: -971043496
+      SueloCaidaNegra_4: -682651313
+      SueloCaidaNegra_5: -1032024980
+      SueloCaidaNegra_6: 925752125
+      SueloCaidaNegra_7: -288505553
+      SueloCaidaNegra_8: -1043156716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

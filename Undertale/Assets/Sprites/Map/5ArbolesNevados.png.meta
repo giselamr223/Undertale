@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 140
+  spritePixelsToUnits: 139
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -194,7 +194,7 @@ TextureImporter:
       name: 5ArbolesNevados_2
       rect:
         serializedVersion: 2
-        x: 296
+        x: 301
         y: 594
         width: 140
         height: 140
@@ -531,7 +531,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 153
+        y: 151
         width: 140
         height: 140
       alignment: 0
@@ -614,7 +614,7 @@ TextureImporter:
       name: 5ArbolesNevados_23
       rect:
         serializedVersion: 2
-        x: 302
+        x: 301
         y: 6
         width: 140
         height: 140

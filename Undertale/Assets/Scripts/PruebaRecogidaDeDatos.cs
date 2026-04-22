@@ -5,38 +5,28 @@ using System;
 
 public class MongoManager : MonoBehaviour
 {
-    public PlayerController playerStats;
-
-    void Awake() {
-        playerStats = FindObjectOfType<PlayerController>();
-
+    void OnApplicationQuit()
+    {
+        SaveMovementCount();
     }
 
-    async void Start() //Evento start
+    public void SaveMovementCount()
     {
-        await Task.Delay(1000); // Un delay, para assegurar la connexion a la base de datos (Si no lo ponia no se subia nada).
-        await SaveTestData();
-    }
-    
-    public async Task SaveTestData() // Funcion para guardar datos de prueba en MongoDB
-    {
-        if (ConnexioDB.usersCollection == null) // Si no hay conexión a MongoDB, mostrara un error.
+        BsonDocument document;
+
+        if (ConnexioDB.usersCollection == null)
         {
             Debug.LogError("No hay conexión a MongoDB");
             return;
         }
 
-        PlayerController.PlayerData player = new PlayerController.PlayerData();
+        document = new BsonDocument();
 
-        player = playerStats.playerData; // Asigna los datos del jugador a la variable player.
+        document.Add("movementCount", CountMovement.movementCount);
+        document.Add("date", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 
-        //Debug.LogError(player.ToString());
+        ConnexioDB.usersCollection.InsertOne(document);
 
-        var document = player.ToBsonDocument(); // Pasa los datos del jugador a BSON.
-
-        await ConnexioDB.usersCollection.InsertOneAsync(document); // Inserta el documento en la base de MongoDB
-
-        Debug.Log("Datos guardados en MongoDB"); // Muestra este mensaje por consola.
+        Debug.Log("Datos guardados en MongoDB");
     }
-    
-}   
+}

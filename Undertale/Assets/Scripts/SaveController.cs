@@ -4,53 +4,63 @@ public class SaveController : MonoBehaviour
 {
     public PlayerController playerStats;
     public SaveManager saveManager;
-    GameObject player;
+
     private bool isPlayerInTrigger = false;
 
     void Awake()
     {
-        playerStats = FindObjectOfType<PlayerController>();
-        saveManager = FindObjectOfType<SaveManager>();
-        player = GameObject.FindWithTag("Player");
+        if (playerStats == null)
+        {
+            playerStats = FindObjectOfType<PlayerController>();
+        }
+
+        if (saveManager == null)
+        {
+            saveManager = FindObjectOfType<SaveManager>();
+        }
     }
 
     void Update()
-    {   // Si presiona la tecla G para guardar el juego
-        // (hay que modificar la tecla si es necesario o el tipo de sistema de captura o guardado).
-
+    {
         if (isPlayerInTrigger == true)
         {
             if (Input.GetKeyDown(KeyCode.G))
             {
-                UnityEngine.Debug.Log("GUARDANDO...");
+                Debug.Log("GUARDANDO...");
+
+                if (playerStats == null)
+                {
+                    Debug.LogError("playerStats is null");
+                    return;
+                }
+
+                if (saveManager == null)
+                {
+                    Debug.LogError("saveManager is null");
+                    return;
+                }
 
                 string json = JsonUtility.ToJson(playerStats.playerData, true);
                 saveManager.SaveGame(json);
             }
-
         }
-        
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = true;
-
-            //Destroy(other.gameObject);
+            Debug.Log("PLAYER INSIDE SAVE POINT");
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = false;
+            Debug.Log("PLAYER OUTSIDE SAVE POINT");
         }
     }
-
-
-
 }
-

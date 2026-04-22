@@ -1,29 +1,50 @@
 using System.Diagnostics;
+using System.IO;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    // Esta funcion se encarga de guardar el juego.
     public void SaveGame(string json)
     {
-        // Ruta del archivo JAR que se encargará de guardar los datos en MongoDB.
-        // Este archivo JAR es un programa Java que se encargará de recibir los datos en formato JSON y guardarlos en MongoDB.
-        string jarPath = Application.dataPath + "/../External/SaveSystem/SaveSystem.jar";
+        string jarPath;
+        Process p;
+        bool started;
+        string output;
+        string error;
 
-        json = json.Replace("\"", "\\\""); // Esto ayuda al programa a inerpretar bien el JSON.
+        jarPath = Application.dataPath + "/../External/SaveSystem/SaveSystem.jar";
 
-        Process p = new Process();
+        if (File.Exists(jarPath) == false)
+        {
+            UnityEngine.Debug.LogError("Jar file not found: " + jarPath);
+            return;
+        }
+
+        json = json.Replace("\"", "\\\"");
+
+        p = new Process();
         p.StartInfo.FileName = "java";
         p.StartInfo.Arguments = "-jar \"" + jarPath + "\" \"" + json + "\"";
         p.StartInfo.UseShellExecute = false;
         p.StartInfo.RedirectStandardOutput = true;
+        p.StartInfo.RedirectStandardError = true;
         p.StartInfo.CreateNoWindow = true;
 
-        p.Start();
+        started = p.Start();
 
-        string output = p.StandardOutput.ReadToEnd();
+        if (started == false)
+        {
+            UnityEngine.Debug.LogError("Java process could not start");
+            return;
+        }
+
+        output = p.StandardOutput.ReadToEnd();
+        error = p.StandardError.ReadToEnd();
+
         p.WaitForExit();
 
-        UnityEngine.Debug.Log("Java dice: " + output);
+        UnityEngine.Debug.Log("Java output: " + output);
+        UnityEngine.Debug.Log("Java error: " + error);
+        UnityEngine.Debug.Log("Java exit code: " + p.ExitCode);
     }
 }

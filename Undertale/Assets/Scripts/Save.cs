@@ -12,7 +12,7 @@ public class SaveManager : MonoBehaviour
         string output;
         string error;
 
-        jarPath = Application.dataPath + "/../External/SaveSystem/SaveSystem.jar";
+        jarPath = Application.dataPath + "/../External/SaveSystem/SaveSystem.jar"; // Ruta relativa del archivo JAR
 
         if (File.Exists(jarPath) == false)
         {
@@ -20,7 +20,7 @@ public class SaveManager : MonoBehaviour
             return;
         }
 
-        json = json.Replace("\"", "\\\"");
+        json = json.Replace("\"", "\\\""); // Ayuda a evitar problemas.
 
         p = new Process();
         p.StartInfo.FileName = "java";
@@ -43,8 +43,10 @@ public class SaveManager : MonoBehaviour
 
         p.WaitForExit();
 
+        /**
         UnityEngine.Debug.Log("Java output: " + output);
         UnityEngine.Debug.Log("Java error: " + error);
         UnityEngine.Debug.Log("Java exit code: " + p.ExitCode);
+        */
     }
 }

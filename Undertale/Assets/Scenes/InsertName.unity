@@ -691,11 +691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f299bb58075a228438049c1fd4e600a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridParent: {fileID: 1670985989}
-  letterPrefab: {fileID: 981613043483746675, guid: 387929796d98a8342bde03cf86fed95e, type: 3}
-  nameText: {fileID: 832125224}
-  columns: 7
-  maxLength: 15
 --- !u!4 &664808046
 Transform:
   m_ObjectHideFlags: 0

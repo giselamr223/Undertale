@@ -107,4 +107,17 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    public float GetUp() // Funcion que devuelve el valor que coge del input del movimiento vertical.
+    {
+        Debug.Log("Valor UP :" + up_action.ReadValue<float>());
+        return up_action.ReadValue<float>();    
+    }
+
+    public float GetForward() // Funcion que devuelve el valor que coge del input del movimiento horizontal.
+    {
+        Debug.Log("Valor FORWARD :" + forward_action.ReadValue<float>());
+        return forward_action.ReadValue<float>();
+    }
+
 }

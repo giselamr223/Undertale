@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 6470901748081617239}
   - component: {fileID: 5951994901487082836}
   - component: {fileID: 1182435023119167427}
+  - component: {fileID: 1633619692843041559}
   - component: {fileID: 2100889010170322401}
   - component: {fileID: 9121542129537786579}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,6 +151,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1633619692843041559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051391289316018524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80637ad3748bac9439493b51867928bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions: {fileID: -944628639613478452, guid: f333727a3711e9a418600fd6ece96496, type: 3}
 --- !u!114 &2100889010170322401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +179,10 @@ MonoBehaviour:
   horizontalSpeed: 1
   verticalSpeed: 1
   actions: {fileID: -944628639613478452, guid: f333727a3711e9a418600fd6ece96496, type: 3}
+  health: 20
+  playerData:
+    playerName: 
+    hp: 0
 --- !u!95 &9121542129537786579
 Animator:
   serializedVersion: 5

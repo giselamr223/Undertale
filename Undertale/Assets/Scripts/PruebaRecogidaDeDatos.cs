@@ -5,28 +5,33 @@ using System;
 
 public class MongoManager : MonoBehaviour
 {
-    void OnApplicationQuit()
+    void OnApplicationQuit() // Funcion que cuando se cierra el juego, guarda un numero de movimientos a la DB.
     {
-        SaveMovementCount();
+        SaveMovementCount(); 
     }
 
-    public void SaveMovementCount()
+    public void SaveMovementCount() 
     {
         BsonDocument document;
 
         if (ConnexioDB.usersCollection == null)
         {
             Debug.LogError("No hay conexión a MongoDB");
-            return;
+        } 
+        else
+        {
+            document = new BsonDocument(); 
+
+            document.Add("movementCount", CountMovement.movementCount); // Se añade el numero de movimientos.
+            document.Add("date", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")); // Se añade la fecha y hora actual.
+
+            ConnexioDB.usersCollection.InsertOne(document); // Inserta el document al MongoDB.
+
+            Debug.Log("Datos guardados en MongoDB");
+
+
         }
 
-        document = new BsonDocument();
 
-        document.Add("movementCount", CountMovement.movementCount);
-        document.Add("date", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-
-        ConnexioDB.usersCollection.InsertOne(document);
-
-        Debug.Log("Datos guardados en MongoDB");
     }
 }

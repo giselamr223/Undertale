@@ -7,60 +7,67 @@ public class SaveController : MonoBehaviour
 
     private bool isPlayerInTrigger = false;
 
-    void Awake()
+    void Awake() // Se inicia anets que el Start, para que esten bien las referencias.
     {
         if (playerStats == null)
         {
-            playerStats = FindObjectOfType<PlayerController>();
+            playerStats = FindObjectOfType<PlayerController>(); // Coge la referencia del PlayerController de la escena.
         }
 
         if (saveManager == null)
         {
-            saveManager = FindObjectOfType<SaveManager>();
+            saveManager = FindObjectOfType<SaveManager>(); // Coge la referencia del SaveManager de la escena.
         }
     }
 
     void Update()
     {
-        if (isPlayerInTrigger == true)
+        /**
+        if (isPlayerInTrigger == true) // Condicion de si el jugador esta en el collider del punto de guardado.
         {
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                Debug.Log("GUARDANDO...");
 
-                if (playerStats == null)
-                {
-                    Debug.LogError("playerStats is null");
-                    return;
-                }
-
-                if (saveManager == null)
-                {
-                    Debug.LogError("saveManager is null");
-                    return;
-                }
-
-                string json = JsonUtility.ToJson(playerStats.playerData, true);
-                saveManager.SaveGame(json);
-            }
+          
         }
+        */
+
+        if (Input.GetKeyDown(KeyCode.G)) // Condicion de si se pulsa la tecla G para guardar.
+        {
+            Debug.Log("GUARDANDO...");
+
+            // Condiciones que se usa para avisarnos si no estan bien las referencias. 
+
+            if (playerStats == null)
+            {
+                Debug.LogError("playerStats is null");
+            }
+
+            if (saveManager == null)
+            {
+                Debug.LogError("saveManager is null");
+            }
+
+            string json = JsonUtility.ToJson(playerStats.playerData, true); // Coge los datos del jugador y los convierte a formato JSON.
+            saveManager.SaveGame(json); // Llama a la funcion SaveGame del SaveManager, pasandole el JSON con los datos del jugador.
+
+        }
+
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other) // Funcion que se utiliza para detectar si el jugador entra en el collider del punto de guardado.
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = true;
-            Debug.Log("PLAYER INSIDE SAVE POINT");
+            Debug.Log("PLAYER DENTRO DEL PUNTO DE GUARDADO");
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other) // Funcion que se utiliza para detectar si el jugador sale del collider del punto de guardado.
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = false;
-            Debug.Log("PLAYER OUTSIDE SAVE POINT");
+            Debug.Log("PLAYER Fuera del punto de guardado");
         }
     }
 }

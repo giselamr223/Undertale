@@ -18,37 +18,35 @@ public class SaveController : MonoBehaviour
         {
             saveManager = FindObjectOfType<SaveManager>(); // Coge la referencia del SaveManager de la escena.
         }
+        playerStats.GetComponent<PlayerController>();
+
     }
 
     void Update()
     {
-        /**
         if (isPlayerInTrigger == true) // Condicion de si el jugador esta en el collider del punto de guardado.
-        {
-
-          
-        }
-        */
-
-        if (Input.GetKeyDown(KeyCode.G)) // Condicion de si se pulsa la tecla G para guardar.
-        {
-            Debug.Log("GUARDANDO...");
-
-            // Condiciones que se usa para avisarnos si no estan bien las referencias. 
-
-            if (playerStats == null)
+        { 
+            if (Input.GetKeyDown(KeyCode.G)) // Condicion de si se pulsa la tecla G para guardar.
             {
-                Debug.LogError("playerStats is null");
+                Debug.Log("GUARDANDO...");
+
+                // Condiciones que se usa para avisarnos si no estan bien las referencias. 
+
+                if (playerStats == null)
+                {
+                    Debug.LogError("playerStats is null");
+                }
+
+                if (saveManager == null)
+                {
+                    Debug.LogError("saveManager is null");
+                }     
+
+                playerStats.playerData.getMaxhealth(); // Llama a la funcion que le da la vida maxima al player.
+                string json = JsonUtility.ToJson(playerStats.playerData, true); // Coge los datos del jugador y los convierte a formato JSON.
+                saveManager.SaveGame(json); // Llama a la funcion SaveGame del SaveManager, pasandole el JSON con los datos del jugador.
+
             }
-
-            if (saveManager == null)
-            {
-                Debug.LogError("saveManager is null");
-            }
-
-            string json = JsonUtility.ToJson(playerStats.playerData, true); // Coge los datos del jugador y los convierte a formato JSON.
-            saveManager.SaveGame(json); // Llama a la funcion SaveGame del SaveManager, pasandole el JSON con los datos del jugador.
-
         }
 
     }

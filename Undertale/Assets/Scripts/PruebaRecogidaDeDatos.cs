@@ -24,7 +24,7 @@ public class MongoManager : MonoBehaviour
 
             document.Add("movementCount", CountMovement.movementCount); // Se añade el numero de movimientos.
             document.Add("date", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")); // Se añade la fecha y hora actual.
-
+            document.Add("timePlay", Mathf.RoundToInt(Time.time)); // Se añade el tiempo que se ha jugado en una sesion.
             ConnexioDB.usersCollection.InsertOne(document); // Inserta el document al MongoDB.
 
             Debug.Log("Datos guardados en MongoDB");

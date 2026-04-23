@@ -57,6 +57,10 @@ public class PlayerController : MonoBehaviour
             this.playerName = playerName;
         }
 
+        public void getMaxhealth()
+        {
+            this.hp = 20;
+        }
 
     }
 

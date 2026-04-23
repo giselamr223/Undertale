@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b295e0e9ec9f1f24db5e4d5818010f92
+guid: ce07510ae19b5e44e8fffa74f2138eb5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frisk_DownWalk_0
+      name: barrancoSnowman_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 4
-        width: 57
-        height: 87
+        x: 9
+        y: 217
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6fb9dcc75a2da0499d15690b4aa86c1
-      internalID: -1949505341
+      spriteID: d769cf68cecceff4780389d97b5ee60a
+      internalID: 998595209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frisk_DownWalk_1
+      name: barrancoSnowman_1
       rect:
         serializedVersion: 2
-        x: 72
+        x: 219
+        y: 217
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d15bb2a58e96f428706a4cc24e9b37
+      internalID: 411401253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrancoSnowman_2
+      rect:
+        serializedVersion: 2
+        x: 9
         y: 7
-        width: 57
-        height: 87
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,41 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584bd1945ef869b40a28d8354999c182
-      internalID: -1805462800
+      spriteID: 3aa94269ddb0899439d1c35d63022356
+      internalID: 1772515195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frisk_DownWalk_2
+      name: barrancoSnowman_3
       rect:
         serializedVersion: 2
-        x: 141
-        y: 4
-        width: 57
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65f6e96571a33d949bcee735ba69f9b1
-      internalID: -1513311561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frisk_DownWalk_3
-      rect:
-        serializedVersion: 2
-        x: 210
+        x: 219
         y: 7
-        width: 57
-        height: 87
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,92 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9217cf3d6ec7941bc3da7535114e97
-      internalID: -744822751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frisk_DownWalk_4
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 4
-        width: 57
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05a44d03687ea394dbbdcfb102fa07ef
-      internalID: 1754848103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frisk_DownWalk_5
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 7
-        width: 57
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3146b92ee75b40d4a9f48452807c769f
-      internalID: -571923157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frisk_DownWalk_6
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 4
-        width: 57
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05712cdae9b1de24090ffe4c20f4b159
-      internalID: -2101447060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frisk_DownWalk_7
-      rect:
-        serializedVersion: 2
-        x: 486
-        y: 7
-        width: 57
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 362a2cc2e01633747b43b2b172006d21
-      internalID: -1743319299
+      spriteID: deccc9b778f7f6c4dac65501918591a4
+      internalID: 296395462
       vertices: []
       indices: 
       edges: []
@@ -327,14 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Frisk_DownWalk_0: -1949505341
-      Frisk_DownWalk_1: -1805462800
-      Frisk_DownWalk_2: -1513311561
-      Frisk_DownWalk_3: -744822751
-      Frisk_DownWalk_4: 1754848103
-      Frisk_DownWalk_5: -571923157
-      Frisk_DownWalk_6: -2101447060
-      Frisk_DownWalk_7: -1743319299
+      barrancoSnowman_0: 998595209
+      barrancoSnowman_1: 411401253
+      barrancoSnowman_2: 1772515195
+      barrancoSnowman_3: 296395462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnemyVars : MonoBehaviour
 {
@@ -9,3 +10,5 @@ public class EnemyVars : MonoBehaviour
     public float attackValue;
     public float defendValue;
 }
+
+

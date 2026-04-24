@@ -25,7 +25,7 @@ public class Name_Input : MonoBehaviour
     //Index de la letra q se selecciona actualmente
     private int currentIndex = 0;
     //String donde estará el nombre que escribe el jugador
-    private string playerName = "";
+    public static string playerName = "";
     internal List<GameObject> letters;
 
     // Start is called before the first frame update
@@ -184,5 +184,7 @@ public class Name_Input : MonoBehaviour
         playerName = playerName.Substring(0, playerName.Length - 1);
         nameText.text = playerName;
     }
+    
+    
   
 }
